@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Android高级学习路线 | Dqy的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="第一关：Binder、AIDL、多进程（建议学习时间：2周）知识点：Binder原理、AIDL的使用、多进程的定义和特性1. Android开发艺术探索第2章2. Android Bander设计与实现 - 设计篇 - universus的专栏 - CSDN博客 3. 艺术探索第2章的例子，请一定手动运行一遍并仔细理解，地址：GitHub - singwhatiwanna&#x2F;android-art">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android高级学习路线">
+<meta property="og:url" content="http://yoursite.com/2020/05/07/androidSenior/index.html">
+<meta property="og:site_name" content="Dqy的个人博客">
+<meta property="og:description" content="第一关：Binder、AIDL、多进程（建议学习时间：2周）知识点：Binder原理、AIDL的使用、多进程的定义和特性1. Android开发艺术探索第2章2. Android Bander设计与实现 - 设计篇 - universus的专栏 - CSDN博客 3. 艺术探索第2章的例子，请一定手动运行一遍并仔细理解，地址：GitHub - singwhatiwanna&#x2F;android-art">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/images/Android%E9%AB%98%E7%BA%A7%E8%B7%AF%E7%BA%BF.png">
+<meta property="article:published_time" content="2020-05-07T14:31:22.000Z">
+<meta property="article:modified_time" content="2020-05-08T02:13:40.359Z">
+<meta property="article:author" content="Joey">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/Android%E9%AB%98%E7%BA%A7%E8%B7%AF%E7%BA%BF.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Dqy的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Dqy的个人博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-androidSenior" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/07/androidSenior/" class="article-date">
+  <time datetime="2020-05-07T14:31:22.000Z" itemprop="datePublished">2020-05-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Android高级学习路线
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/Android%E9%AB%98%E7%BA%A7%E8%B7%AF%E7%BA%BF.png" alt=""></p>
+<h2 id="第一关：Binder、AIDL、多进程（建议学习时间：2周）"><a href="#第一关：Binder、AIDL、多进程（建议学习时间：2周）" class="headerlink" title="第一关：Binder、AIDL、多进程（建议学习时间：2周）"></a>第一关：Binder、AIDL、多进程（建议学习时间：2周）</h2><h2 id="知识点：Binder原理、AIDL的使用、多进程的定义和特性"><a href="#知识点：Binder原理、AIDL的使用、多进程的定义和特性" class="headerlink" title="知识点：Binder原理、AIDL的使用、多进程的定义和特性"></a>知识点：Binder原理、AIDL的使用、多进程的定义和特性</h2><h3 id="1-Android开发艺术探索第2章"><a href="#1-Android开发艺术探索第2章" class="headerlink" title="1. Android开发艺术探索第2章"></a>1. Android开发艺术探索第2章</h3><h3 id="2-Android-Bander设计与实现-设计篇-universus的专栏-CSDN博客"><a href="#2-Android-Bander设计与实现-设计篇-universus的专栏-CSDN博客" class="headerlink" title="2. Android Bander设计与实现 - 设计篇 - universus的专栏 - CSDN博客 "></a>2. <a href="https://blog.csdn.net/universus/article/details/6211589" target="_blank" rel="noopener">Android Bander设计与实现 - 设计篇 - universus的专栏 - CSDN博客 </a></h3><h3 id="3-艺术探索第2章的例子，请一定手动运行一遍并仔细理解，地址：GitHub-singwhatiwanna-android-art-res-the-sourc…"><a href="#3-艺术探索第2章的例子，请一定手动运行一遍并仔细理解，地址：GitHub-singwhatiwanna-android-art-res-the-sourc…" class="headerlink" title="3. 艺术探索第2章的例子，请一定手动运行一遍并仔细理解，地址：GitHub - singwhatiwanna/android-art-res: the sourc…"></a>3. 艺术探索第2章的例子，请一定手动运行一遍并仔细理解，地址：<a href="https://github.com/singwhatiwanna/android-art-res" target="_blank" rel="noopener">GitHub - singwhatiwanna/android-art-res: the sourc…</a></h3><h2 id="第二关：View的绘制（建议学习时间：3天）"><a href="#第二关：View的绘制（建议学习时间：3天）" class="headerlink" title="第二关：View的绘制（建议学习时间：3天）"></a>第二关：View的绘制（建议学习时间：3天）</h2><h2 id="知识点：View的measure、layout和draw，View的工作原理"><a href="#知识点：View的measure、layout和draw，View的工作原理" class="headerlink" title="知识点：View的measure、layout和draw，View的工作原理"></a>知识点：View的measure、layout和draw，View的工作原理</h2><h3 id="1-Android开发艺术探索第4章"><a href="#1-Android开发艺术探索第4章" class="headerlink" title="1. Android开发艺术探索第4章"></a>1. Android开发艺术探索第4章</h3><h3 id="2-图解View测量、布局及绘制原理-简书"><a href="#2-图解View测量、布局及绘制原理-简书" class="headerlink" title="2. 图解View测量、布局及绘制原理 - 简书"></a>2. <a href="https://www.jianshu.com/p/3d2c49315d68" target="_blank" rel="noopener">图解View测量、布局及绘制原理 - 简书</a></h3><h3 id="3-android-ListView-工作原理-Android-掘金"><a href="#3-android-ListView-工作原理-Android-掘金" class="headerlink" title="3. android ListView 工作原理 - Android - 掘金"></a>3. <a href="https://juejin.im/entry/5819968bda2f60005dda6a2d" target="_blank" rel="noopener">android ListView 工作原理 - Android - 掘金</a></h3><h2 id="第三关：事件分发（建议学习时间：1周）"><a href="#第三关：事件分发（建议学习时间：1周）" class="headerlink" title="第三关：事件分发（建议学习时间：1周）"></a>第三关：事件分发（建议学习时间：1周）</h2><h2 id="知识点：事件分发原理和规则"><a href="#知识点：事件分发原理和规则" class="headerlink" title="知识点：事件分发原理和规则"></a>知识点：事件分发原理和规则</h2><h3 id="1-Android开发艺术探索第3章"><a href="#1-Android开发艺术探索第3章" class="headerlink" title="1. Android开发艺术探索第3章"></a>1. Android开发艺术探索第3章</h3><h3 id="2-Android事件分发机制，大表哥带你慢慢深入-简书"><a href="#2-Android事件分发机制，大表哥带你慢慢深入-简书" class="headerlink" title="2. Android事件分发机制，大表哥带你慢慢深入 - 简书 "></a>2. <a href="https://www.jianshu.com/p/fc0590afb1bf" target="_blank" rel="noopener">Android事件分发机制，大表哥带你慢慢深入 - 简书 </a></h3><h3 id="3-Android-ViewGroup事件分发机制-Hongyang-CSDN博客"><a href="#3-Android-ViewGroup事件分发机制-Hongyang-CSDN博客" class="headerlink" title="3. Android ViewGroup事件分发机制 - Hongyang - CSDN博客"></a>3. <a href="https://blog.csdn.net/lmj623565791/article/details/39102591" target="_blank" rel="noopener">Android ViewGroup事件分发机制 - Hongyang - CSDN博客</a></h3><h2 id="第四关：消息队列（建议学习时间：1天）"><a href="#第四关：消息队列（建议学习时间：1天）" class="headerlink" title="第四关：消息队列（建议学习时间：1天）"></a>第四关：消息队列（建议学习时间：1天）</h2><h2 id="要求：Handler、Looper、Thread三者之间的关系；得知道子线程创建Handler为什么会报错，如何才能不报错"><a href="#要求：Handler、Looper、Thread三者之间的关系；得知道子线程创建Handler为什么会报错，如何才能不报错" class="headerlink" title="要求：Handler、Looper、Thread三者之间的关系；得知道子线程创建Handler为什么会报错，如何才能不报错"></a>要求：Handler、Looper、Thread三者之间的关系；得知道子线程创建Handler为什么会报错，如何才能不报错</h2><h3 id="1-Android开发艺术探索第10章"><a href="#1-Android开发艺术探索第10章" class="headerlink" title="1. Android开发艺术探索第10章"></a>1. Android开发艺术探索第10章</h3><h3 id="2-源码角度讲解子线程创建Handler报错的原因-曹银飞的专栏-CSDN博客"><a href="#2-源码角度讲解子线程创建Handler报错的原因-曹银飞的专栏-CSDN博客" class="headerlink" title="2. 源码角度讲解子线程创建Handler报错的原因 - 曹银飞的专栏 - CSDN博客"></a>2. <a href="https://blog.csdn.net/dfskhgalshgkajghljgh/article/details/52601802" target="_blank" rel="noopener">源码角度讲解子线程创建Handler报错的原因 - 曹银飞的专栏 - CSDN博客</a></h3><h2 id="第五关：Activity难点（建议学习时间：1天）"><a href="#第五关：Activity难点（建议学习时间：1天）" class="headerlink" title="第五关：Activity难点（建议学习时间：1天）"></a>第五关：Activity难点（建议学习时间：1天）</h2><h2 id="①setResult和finish的顺序关系"><a href="#①setResult和finish的顺序关系" class="headerlink" title="①setResult和finish的顺序关系"></a>①setResult和finish的顺序关系</h2><h2 id="②onSaveInstanceState-和onRestoreInstanceState"><a href="#②onSaveInstanceState-和onRestoreInstanceState" class="headerlink" title="②onSaveInstanceState()和onRestoreInstanceState()"></a>②onSaveInstanceState()和onRestoreInstanceState()</h2><h2 id="③onNewIntent-和onConfigurationChanged"><a href="#③onNewIntent-和onConfigurationChanged" class="headerlink" title="③onNewIntent()和onConfigurationChanged()"></a>③onNewIntent()和onConfigurationChanged()</h2><h3 id="1-setResult-的调用时机-沙翁-博客园"><a href="#1-setResult-的调用时机-沙翁-博客园" class="headerlink" title="1. setResult()的调用时机 - 沙翁 - 博客园"></a>1. <a href="https://www.cnblogs.com/shaweng/p/3875825.html" target="_blank" rel="noopener">setResult()的调用时机 - 沙翁 - 博客园</a></h3><h3 id="2-onSaveInstanceState-和onRestoreInstanceState-使用详解…"><a href="#2-onSaveInstanceState-和onRestoreInstanceState-使用详解…" class="headerlink" title="2. onSaveInstanceState()和onRestoreInstanceState()使用详解…"></a>2. <a href="https://www.jianshu.com/p/27181e2e32d2" target="_blank" rel="noopener">onSaveInstanceState()和onRestoreInstanceState()使用详解…</a></h3><h3 id="3-关于onConfigurationChanged方法及常见问题解决-朱小姐。的博客-CSDN…"><a href="#3-关于onConfigurationChanged方法及常见问题解决-朱小姐。的博客-CSDN…" class="headerlink" title="3. 关于onConfigurationChanged方法及常见问题解决 - 朱小姐。的博客 - CSDN…"></a>3. <a href="https://blog.csdn.net/qq_27570955/article/details/55046934" target="_blank" rel="noopener">关于onConfigurationChanged方法及常见问题解决 - 朱小姐。的博客 - CSDN…</a></h3><h3 id="4-艺术探索第1章"><a href="#4-艺术探索第1章" class="headerlink" title="4. 艺术探索第1章"></a>4. 艺术探索第1章</h3><h2 id="Service难点（建议学习时间：2天）"><a href="#Service难点（建议学习时间：2天）" class="headerlink" title="Service难点（建议学习时间：2天）"></a>Service难点（建议学习时间：2天）</h2><h2 id="①先start再bind，如何停止一个Service"><a href="#①先start再bind，如何停止一个Service" class="headerlink" title="①先start再bind，如何停止一个Service"></a>①先start再bind，如何停止一个Service</h2><h2 id="②Service-onStartCommand的返回值"><a href="#②Service-onStartCommand的返回值" class="headerlink" title="②Service onStartCommand的返回值"></a>②Service onStartCommand的返回值</h2><h2 id="③bindService后，ServiceConnection里面的回调方法运行在哪个线程？它们的调用时机分别是什么？"><a href="#③bindService后，ServiceConnection里面的回调方法运行在哪个线程？它们的调用时机分别是什么？" class="headerlink" title="③bindService后，ServiceConnection里面的回调方法运行在哪个线程？它们的调用时机分别是什么？"></a>③bindService后，ServiceConnection里面的回调方法运行在哪个线程？它们的调用时机分别是什么？</h2><h2 id="④Service的onCreate运行在哪个线程？"><a href="#④Service的onCreate运行在哪个线程？" class="headerlink" title="④Service的onCreate运行在哪个线程？"></a>④Service的onCreate运行在哪个线程？</h2><h3 id="1-Android中startService和bindService的区别-简书"><a href="#1-Android中startService和bindService的区别-简书" class="headerlink" title="1. Android中startService和bindService的区别 - 简书"></a>1. <a href="https://www.jianshu.com/p/d870f99b675c" target="_blank" rel="noopener">Android中startService和bindService的区别 - 简书</a></h3><h3 id="2-Service-onStartCommand-诡异的返回值-CodingMan-CSDN博…"><a href="#2-Service-onStartCommand-诡异的返回值-CodingMan-CSDN博…" class="headerlink" title="2. Service: onStartCommand 诡异的返回值 - CodingMan - CSDN博…"></a>2. <a href="https://blog.csdn.net/veryitman/article/details/7600008" target="_blank" rel="noopener">Service: onStartCommand 诡异的返回值 - CodingMan - CSDN博…</a></h3><h3 id="3-Service的onCreate、onStartCommand、onDestory等全部生命周期方法都运行在UI线程，ServiceConnection里面的回调方法也是运行在UI线程"><a href="#3-Service的onCreate、onStartCommand、onDestory等全部生命周期方法都运行在UI线程，ServiceConnection里面的回调方法也是运行在UI线程" class="headerlink" title="3. Service的onCreate、onStartCommand、onDestory等全部生命周期方法都运行在UI线程，ServiceConnection里面的回调方法也是运行在UI线程"></a>3. Service的onCreate、onStartCommand、onDestory等全部生命周期方法都运行在UI线程，ServiceConnection里面的回调方法也是运行在UI线程</h3><h2 id="第七关：ContentProvider难点-建议学习时间：3天"><a href="#第七关：ContentProvider难点-建议学习时间：3天" class="headerlink" title="第七关：ContentProvider难点(建议学习时间：3天)"></a>第七关：ContentProvider难点(建议学习时间：3天)</h2><h2 id="①ContentProvider的生命周期"><a href="#①ContentProvider的生命周期" class="headerlink" title="①ContentProvider的生命周期"></a>①ContentProvider的生命周期</h2><h2 id="②-ContentProvider的onCreate和CRUD运行在哪个线程？它们是线程安全的吗？"><a href="#②-ContentProvider的onCreate和CRUD运行在哪个线程？它们是线程安全的吗？" class="headerlink" title="② ContentProvider的onCreate和CRUD运行在哪个线程？它们是线程安全的吗？"></a>② ContentProvider的onCreate和CRUD运行在哪个线程？它们是线程安全的吗？</h2><h2 id="③-ContentProvider的内部存储只能是sqlite吗？"><a href="#③-ContentProvider的内部存储只能是sqlite吗？" class="headerlink" title="③ ContentProvider的内部存储只能是sqlite吗？"></a>③ ContentProvider的内部存储只能是sqlite吗？</h2><h3 id="1-艺术探索第9章中ContentProvider的启动、艺术探索第二章中ContentProvider的介绍"><a href="#1-艺术探索第9章中ContentProvider的启动、艺术探索第二章中ContentProvider的介绍" class="headerlink" title="1. 艺术探索第9章中ContentProvider的启动、艺术探索第二章中ContentProvider的介绍"></a>1. 艺术探索第9章中ContentProvider的启动、艺术探索第二章中ContentProvider的介绍</h3><h3 id="2-android-ContentProvider-onCreate-在-Application-onCreate-之前执行"><a href="#2-android-ContentProvider-onCreate-在-Application-onCreate-之前执行" class="headerlink" title="2. android ContentProvider onCreate()在 Application onCreate()之前执行"></a>2. <a href="https://www.jianshu.com/p/0f1e36507b9d" target="_blank" rel="noopener">android ContentProvider onCreate()在 Application onCreate()之前执行</a></h3><h3 id="3-ContentProvider总结-简书-CRUD运行在Binder线程池中，不是线程安全的，而如果在同一个"><a href="#3-ContentProvider总结-简书-CRUD运行在Binder线程池中，不是线程安全的，而如果在同一个" class="headerlink" title="3. ContentProvider总结 - 简书,CRUD运行在Binder线程池中，不是线程安全的，而如果在同一个"></a>3. <a href="https://www.jianshu.com/p/cfa46bea6d7b" target="_blank" rel="noopener">ContentProvider总结 - 简书</a>,CRUD运行在Binder线程池中，不是线程安全的，而如果在同一个</h3><h3 id="进程访问ContentProvider，根据Binder的原理，同进程的Binder调用就是直接的对象调用，这个时候CRUD运行在调用者的线程中。另外，ContentPro"><a href="#进程访问ContentProvider，根据Binder的原理，同进程的Binder调用就是直接的对象调用，这个时候CRUD运行在调用者的线程中。另外，ContentPro" class="headerlink" title="进程访问ContentProvider，根据Binder的原理，同进程的Binder调用就是直接的对象调用，这个时候CRUD运行在调用者的线程中。另外，ContentPro"></a>进程访问ContentProvider，根据Binder的原理，同进程的Binder调用就是直接的对象调用，这个时候CRUD运行在调用者的线程中。另外，ContentPro</h3><h3 id="vider的内部存储不一定是sqlite，它可以是任意数据。"><a href="#vider的内部存储不一定是sqlite，它可以是任意数据。" class="headerlink" title="vider的内部存储不一定是sqlite，它可以是任意数据。"></a>vider的内部存储不一定是sqlite，它可以是任意数据。</h3><h2 id="第八关：AsyncTask原理-建议学习时间：3天"><a href="#第八关：AsyncTask原理-建议学习时间：3天" class="headerlink" title="第八关：AsyncTask原理(建议学习时间：3天)"></a>第八关：AsyncTask原理(建议学习时间：3天)</h2><h2 id="要求：知道AsyncTask的工作原理，知道其串行和并行随版本的变迁"><a href="#要求：知道AsyncTask的工作原理，知道其串行和并行随版本的变迁" class="headerlink" title="要求：知道AsyncTask的工作原理，知道其串行和并行随版本的变迁"></a>要求：知道AsyncTask的工作原理，知道其串行和并行随版本的变迁</h2><h3 id="1-Android源码分析—带你认识不一样的AsyncTask-任玉刚-CSDN博客"><a href="#1-Android源码分析—带你认识不一样的AsyncTask-任玉刚-CSDN博客" class="headerlink" title="1. Android源码分析—带你认识不一样的AsyncTask - 任玉刚 - CSDN博客"></a>1. <a href="https://blog.csdn.net/singwhatiwanna/article/details/17596225" target="_blank" rel="noopener">Android源码分析—带你认识不一样的AsyncTask - 任玉刚 - CSDN博客</a></h3><h3 id="2-AsyncTask-8-1版本的源码"><a href="#2-AsyncTask-8-1版本的源码" class="headerlink" title="2. AsyncTask 8.1版本的源码"></a>2. <a href="https://android.googlesource.com/platform/frameworks/base/android-8.1.0_r46/core/java/android/os/AsyncTask.java" target="_blank" rel="noopener">AsyncTask 8.1版本的源码</a></h3><h2 id="第九关：RemoteViews-建议学习时间：7天"><a href="#第九关：RemoteViews-建议学习时间：7天" class="headerlink" title="第九关：RemoteViews(建议学习时间：7天)"></a>第九关：RemoteViews(建议学习时间：7天)</h2><h2 id="要求：熟悉RemoteViews并了解其原理"><a href="#要求：熟悉RemoteViews并了解其原理" class="headerlink" title="要求：熟悉RemoteViews并了解其原理"></a>要求：熟悉RemoteViews并了解其原理</h2><h3 id="1-Android开发艺术探索-第5章"><a href="#1-Android开发艺术探索-第5章" class="headerlink" title="1. Android开发艺术探索 第5章"></a>1. Android开发艺术探索 第5章</h3><h3 id="2-关于-RemoteViews-跨进程资源访问的勘误-掘金"><a href="#2-关于-RemoteViews-跨进程资源访问的勘误-掘金" class="headerlink" title="2. 关于 RemoteViews 跨进程资源访问的勘误 - 掘金"></a>2. <a href="https://juejin.im/post/5c3b588be51d4551de1da844" target="_blank" rel="noopener">关于 RemoteViews 跨进程资源访问的勘误 - 掘金</a></h3><h2 id="第十关：Window和ViewRootImpl-建议学习时间：14天"><a href="#第十关：Window和ViewRootImpl-建议学习时间：14天" class="headerlink" title="第十关：Window和ViewRootImpl(建议学习时间：14天)"></a>第十关：Window和ViewRootImpl(建议学习时间：14天)</h2><h2 id="要求：熟悉Window、WMS和ViewRootImpl的原理"><a href="#要求：熟悉Window、WMS和ViewRootImpl的原理" class="headerlink" title="要求：熟悉Window、WMS和ViewRootImpl的原理"></a>要求：熟悉Window、WMS和ViewRootImpl的原理</h2><h3 id="1-Android开发艺术探索-第8章"><a href="#1-Android开发艺术探索-第8章" class="headerlink" title="1. Android开发艺术探索 第8章"></a>1. Android开发艺术探索 第8章</h3><h3 id="2-Android窗口机制（四）ViewRootImpl与View和WindowManager-简书"><a href="#2-Android窗口机制（四）ViewRootImpl与View和WindowManager-简书" class="headerlink" title="2. Android窗口机制（四）ViewRootImpl与View和WindowManager - 简书"></a>2. <a href="https://www.jianshu.com/p/9da7bfe18374" target="_blank" rel="noopener">Android窗口机制（四）ViewRootImpl与View和WindowManager - 简书</a></h3><h3 id="3-Android中MotionEvent的来源和ViewRootImpl-任玉刚-CSDN博客"><a href="#3-Android中MotionEvent的来源和ViewRootImpl-任玉刚-CSDN博客" class="headerlink" title="3. Android中MotionEvent的来源和ViewRootImpl - 任玉刚 - CSDN博客"></a>3. <a href="https://blog.csdn.net/singwhatiwanna/article/details/50775201" target="_blank" rel="noopener">Android中MotionEvent的来源和ViewRootImpl - 任玉刚 - CSDN博客</a></h3><h2 id="第十一关：刁钻问题汇总-建议学习时间：一周"><a href="#第十一关：刁钻问题汇总-建议学习时间：一周" class="headerlink" title="第十一关：刁钻问题汇总 (建议学习时间：一周)"></a>第十一关：刁钻问题汇总 (建议学习时间：一周)</h2><h3 id="1-子线程访问-UI-却不报错的原因：Android中子线程真的不能更新UI吗？-yinhuanxu-CSDN博客"><a href="#1-子线程访问-UI-却不报错的原因：Android中子线程真的不能更新UI吗？-yinhuanxu-CSDN博客" class="headerlink" title="1. 子线程访问 UI 却不报错的原因：Android中子线程真的不能更新UI吗？ - yinhuanxu - CSDN博客"></a>1. 子线程访问 UI 却不报错的原因：<a href="https://blog.csdn.net/xyh269/article/details/52728861" target="_blank" rel="noopener">Android中子线程真的不能更新UI吗？ - yinhuanxu - CSDN博客</a></h3><h3 id="2-主线程的消息循环是一个死循环，为何不会卡死：Android中为什么主线程不会因为Looper-loop-里的死循环卡死？-知乎"><a href="#2-主线程的消息循环是一个死循环，为何不会卡死：Android中为什么主线程不会因为Looper-loop-里的死循环卡死？-知乎" class="headerlink" title="2. 主线程的消息循环是一个死循环，为何不会卡死：Android中为什么主线程不会因为Looper.loop()里的死循环卡死？ - 知乎"></a>2. 主线程的消息循环是一个死循环，为何不会卡死：<a href="https://www.zhihu.com/question/34652589" target="_blank" rel="noopener">Android中为什么主线程不会因为Looper.loop()里的死循环卡死？ - 知乎</a></h3><h3 id="3-Binder、IBinder、IInterface的关系：把玩Android多进程-pdf-免费高速下载-百度网盘-分享无限制"><a href="#3-Binder、IBinder、IInterface的关系：把玩Android多进程-pdf-免费高速下载-百度网盘-分享无限制" class="headerlink" title="3. Binder、IBinder、IInterface的关系：把玩Android多进程.pdf_免费高速下载|百度网盘-分享无限制"></a>3. Binder、IBinder、IInterface的关系：<a href="https://pan.baidu.com/s/1VImj3EXesFXAqT3pskcSig" target="_blank" rel="noopener">把玩Android多进程.pdf_免费高速下载|百度网盘-分享无限制</a></h3><h4 id="注意：主线程的消息循环背后，一切皆是消息，消息机制和Binder是Android系统的两大核心机制，屏幕触摸消息、键盘消息、四大组件的启动等均是由消息驱动。"><a href="#注意：主线程的消息循环背后，一切皆是消息，消息机制和Binder是Android系统的两大核心机制，屏幕触摸消息、键盘消息、四大组件的启动等均是由消息驱动。" class="headerlink" title="注意：主线程的消息循环背后，一切皆是消息，消息机制和Binder是Android系统的两大核心机制，屏幕触摸消息、键盘消息、四大组件的启动等均是由消息驱动。"></a>注意：主线程的消息循环背后，一切皆是消息，消息机制和Binder是Android系统的两大核心机制，屏幕触摸消息、键盘消息、四大组件的启动等均是由消息驱动。</h4><h2 id="第十二关：Retrofit原理分析-建议学习时间：14天"><a href="#第十二关：Retrofit原理分析-建议学习时间：14天" class="headerlink" title="第十二关：Retrofit原理分析 (建议学习时间：14天)"></a>第十二关：Retrofit原理分析 (建议学习时间：14天)</h2><h2 id="要求：熟悉Retrofit-OKHttp的工作原理"><a href="#要求：熟悉Retrofit-OKHttp的工作原理" class="headerlink" title="要求：熟悉Retrofit/OKHttp的工作原理"></a>要求：熟悉Retrofit/OKHttp的工作原理</h2><h3 id="1-OKHttp源码解析-简书"><a href="#1-OKHttp源码解析-简书" class="headerlink" title="1. OKHttp源码解析 - 简书"></a>1. <a href="https://www.jianshu.com/p/27c1554b7fee" target="_blank" rel="noopener">OKHttp源码解析 - 简书</a></h3><h3 id="2-Retrofit原理解析最简洁的思路-知乎"><a href="#2-Retrofit原理解析最简洁的思路-知乎" class="headerlink" title="2. Retrofit原理解析最简洁的思路 - 知乎"></a>2. <a href="hhttps://zhuanlan.zhihu.com/p/35121326">Retrofit原理解析最简洁的思路 - 知乎</a></h3><h3 id="3-Retrofit是如何工作的？-简书"><a href="#3-Retrofit是如何工作的？-简书" class="headerlink" title="3. Retrofit是如何工作的？ - 简书"></a>3. <a href="https://www.jianshu.com/p/cb3a7413b448" target="_blank" rel="noopener">Retrofit是如何工作的？ - 简书</a></h3><h3 id="4-自行阅读okhttp-retrofit的源码，并写出一篇原理分析的文章"><a href="#4-自行阅读okhttp-retrofit的源码，并写出一篇原理分析的文章" class="headerlink" title="4.自行阅读okhttp/retrofit的源码，并写出一篇原理分析的文章"></a>4.自行阅读okhttp/retrofit的源码，并写出一篇原理分析的文章</h3><h2 id="第十三关：RxJava原理分析-建议学习时间：14天"><a href="#第十三关：RxJava原理分析-建议学习时间：14天" class="headerlink" title="第十三关：RxJava原理分析 (建议学习时间：14天)"></a>第十三关：RxJava原理分析 (建议学习时间：14天)</h2><h3 id="1-友好-RxJava2-x-源码解析（一）基本订阅流程-掘金"><a href="#1-友好-RxJava2-x-源码解析（一）基本订阅流程-掘金" class="headerlink" title="1. 友好 RxJava2.x 源码解析（一）基本订阅流程 - 掘金"></a>1. <a href="https://juejin.im/post/5a209c876fb9a0452577e830" target="_blank" rel="noopener">友好 RxJava2.x 源码解析（一）基本订阅流程 - 掘金</a></h3><h3 id="2-友好-RxJava2-x-源码解析（二）线程切换-掘金"><a href="#2-友好-RxJava2-x-源码解析（二）线程切换-掘金" class="headerlink" title="2. 友好 RxJava2.x 源码解析（二）线程切换 - 掘金"></a>2. <a href="https://juejin.im/post/5a248206f265da432153ddbc" target="_blank" rel="noopener">友好 RxJava2.x 源码解析（二）线程切换 - 掘金</a></h3><h3 id="3-友好-RxJava2-x-源码解析（三）zip-源码分析-掘金"><a href="#3-友好-RxJava2-x-源码解析（三）zip-源码分析-掘金" class="headerlink" title="3. 友好 RxJava2.x 源码解析（三）zip 源码分析 - 掘金"></a>3. <a href="https://juejin.im/post/5ac16a2d6fb9a028b617a82a" target="_blank" rel="noopener">友好 RxJava2.x 源码解析（三）zip 源码分析 - 掘金</a></h3><h3 id="4-自行阅读RxJava源码，并写出一篇原理分析的文章"><a href="#4-自行阅读RxJava源码，并写出一篇原理分析的文章" class="headerlink" title="4. 自行阅读RxJava源码，并写出一篇原理分析的文章"></a>4. 自行阅读RxJava源码，并写出一篇原理分析的文章</h3><h2 id="第十四关：Glide原理分析-建议学习时间：14天"><a href="#第十四关：Glide原理分析-建议学习时间：14天" class="headerlink" title="第十四关：Glide原理分析 (建议学习时间：14天)"></a>第十四关：Glide原理分析 (建议学习时间：14天)</h2><h3 id="1-https-blog-csdn-net-guolin-blog-article-details-53939176"><a href="#1-https-blog-csdn-net-guolin-blog-article-details-53939176" class="headerlink" title="1. https://blog.csdn.net/guolin_blog/article/details/53939176"></a>1. <a href="https://blog.csdn.net/guolin_blog/article/details/53939176" target="_blank" rel="noopener">https://blog.csdn.net/guolin_blog/article/details/53939176</a></h3><h3 id="2-自行阅读-glide-4-源码，并写出一篇原理分析的文章"><a href="#2-自行阅读-glide-4-源码，并写出一篇原理分析的文章" class="headerlink" title="2. 自行阅读 glide 4 源码，并写出一篇原理分析的文章"></a>2. 自行阅读 glide 4 源码，并写出一篇原理分析的文章</h3><h2 id="第十五关：Groovy-建议学习时间：3天"><a href="#第十五关：Groovy-建议学习时间：3天" class="headerlink" title="第十五关：Groovy (建议学习时间：3天)"></a>第十五关：Groovy (建议学习时间：3天)</h2><h2 id="要求：熟悉groovy的常见语法"><a href="#要求：熟悉groovy的常见语法" class="headerlink" title="要求：熟悉groovy的常见语法"></a>要求：熟悉groovy的常见语法</h2><h3 id="1-Gradle从入门到实战-Groovy基础-任玉刚-CSDN博客"><a href="#1-Gradle从入门到实战-Groovy基础-任玉刚-CSDN博客" class="headerlink" title="1. Gradle从入门到实战 - Groovy基础 - 任玉刚 - CSDN博客"></a>1. <a href="https://blog.csdn.net/singwhatiwanna/article/details/76084580" target="_blank" rel="noopener">Gradle从入门到实战 - Groovy基础 - 任玉刚 - CSDN博客</a></h3><h3 id="2-官方文档，可当做字典来查阅"><a href="#2-官方文档，可当做字典来查阅" class="headerlink" title="2. 官方文档，可当做字典来查阅"></a>2. <a href="http://www.groovy-lang.org/documentation.html" target="_blank" rel="noopener">官方文档，可当做字典来查阅</a></h3><h2 id="第十六关：Gradle插件基础-建议学习时间：7天"><a href="#第十六关：Gradle插件基础-建议学习时间：7天" class="headerlink" title="第十六关：Gradle插件基础 (建议学习时间：7天)"></a>第十六关：Gradle插件基础 (建议学习时间：7天)</h2><h2 id="要求：熟悉gradle语法，可以书写简单的gradle插件"><a href="#要求：熟悉gradle语法，可以书写简单的gradle插件" class="headerlink" title="要求：熟悉gradle语法，可以书写简单的gradle插件"></a>要求：熟悉gradle语法，可以书写简单的gradle插件</h2><h3 id="1-全面理解Gradle-执行时序-任玉刚-CSDN博客"><a href="#1-全面理解Gradle-执行时序-任玉刚-CSDN博客" class="headerlink" title="1. 全面理解Gradle - 执行时序 - 任玉刚 - CSDN博客"></a>1. <a href="https://blog.csdn.net/singwhatiwanna/article/details/78797506" target="_blank" rel="noopener">全面理解Gradle - 执行时序 - 任玉刚 - CSDN博客</a></h3><h3 id="2-全面理解Gradle-定义Task-任玉刚-CSDN博客"><a href="#2-全面理解Gradle-定义Task-任玉刚-CSDN博客" class="headerlink" title="2. 全面理解Gradle - 定义Task - 任玉刚 - CSDN博客"></a>2. <a href="https://blog.csdn.net/singwhatiwanna/article/details/78898113" target="_blank" rel="noopener">全面理解Gradle - 定义Task - 任玉刚 - CSDN博客</a></h3><h3 id="3-一篇文章带你了解Gradle插件的所有创建方式"><a href="#3-一篇文章带你了解Gradle插件的所有创建方式" class="headerlink" title="3. 一篇文章带你了解Gradle插件的所有创建方式"></a>3. <a href="https://mp.weixin.qq.com/s/KCpl0CNgwMv0CgvbadNK6A" target="_blank" rel="noopener">一篇文章带你了解Gradle插件的所有创建方式</a></h3><h3 id="4-写给-Android-开发者的-Gradle-系列（三）撰写-plugin-掘金"><a href="#4-写给-Android-开发者的-Gradle-系列（三）撰写-plugin-掘金" class="headerlink" title="4. 写给 Android 开发者的 Gradle 系列（三）撰写 plugin - 掘金"></a>4. <a href="https://juejin.im/post/5b02113a5188254289190671" target="_blank" rel="noopener">写给 Android 开发者的 Gradle 系列（三）撰写 plugin - 掘金</a></h3><h2 id="第十七关：设计模式-建议学习时间：30-60天"><a href="#第十七关：设计模式-建议学习时间：30-60天" class="headerlink" title="第十七关：设计模式 (建议学习时间：30-60天)"></a>第十七关：设计模式 (建议学习时间：30-60天)</h2><h2 id="要求：熟悉6大基本原则、23种设计模式，并能在实际中灵活使用"><a href="#要求：熟悉6大基本原则、23种设计模式，并能在实际中灵活使用" class="headerlink" title="要求：熟悉6大基本原则、23种设计模式，并能在实际中灵活使用"></a>要求：熟悉6大基本原则、23种设计模式，并能在实际中灵活使用</h2><h3 id="1-大话设计模式"><a href="#1-大话设计模式" class="headerlink" title="1. 大话设计模式"></a>1. 大话设计模式</h3><h3 id="2-23种设计模式全解析-龙鱼鹿-CSDN博客"><a href="#2-23种设计模式全解析-龙鱼鹿-CSDN博客" class="headerlink" title="2. 23种设计模式全解析 - 龙鱼鹿 - CSDN博客"></a>2. <a href="https://blog.csdn.net/longyulu/article/details/9159589" target="_blank" rel="noopener">23种设计模式全解析 - 龙鱼鹿 - CSDN博客</a></h3><h3 id="3-如何掌握设计模式"><a href="#3-如何掌握设计模式" class="headerlink" title="3. 如何掌握设计模式"></a>3. <a href="https://wx.zsxq.com/dweb2/index/group/481115158848?from=mweb&type=detail" target="_blank" rel="noopener">如何掌握设计模式</a></h3><h3 id="4-如何通俗理解设计模式及其思想-掘金"><a href="#4-如何通俗理解设计模式及其思想-掘金" class="headerlink" title="4. 如何通俗理解设计模式及其思想? - 掘金"></a>4. <a href="https://juejin.im/post/5b3cddb6f265da0f8145c049" target="_blank" rel="noopener">如何通俗理解设计模式及其思想? - 掘金</a></h3><h2 id="第十八关：MVC、MVP、MVVM-建议学习时间：14天"><a href="#第十八关：MVC、MVP、MVVM-建议学习时间：14天" class="headerlink" title="第十八关：MVC、MVP、MVVM (建议学习时间：14天)"></a>第十八关：MVC、MVP、MVVM (建议学习时间：14天)</h2><h3 id="1-MVC、MVP、MVVM，我到底该怎么选？-掘金"><a href="#1-MVC、MVP、MVVM，我到底该怎么选？-掘金" class="headerlink" title="1. MVC、MVP、MVVM，我到底该怎么选？ - 掘金"></a>1. <a href="https://juejin.im/post/5b3a3a44f265da630e27a7e6" target="_blank" rel="noopener">MVC、MVP、MVVM，我到底该怎么选？ - 掘金</a></h3><h3 id="2-一个小例子彻底搞懂-MVP-掘金"><a href="#2-一个小例子彻底搞懂-MVP-掘金" class="headerlink" title="2. 一个小例子彻底搞懂 MVP - 掘金"></a>2. <a href="https://juejin.im/post/5b33ad92f265da59584da067" target="_blank" rel="noopener">一个小例子彻底搞懂 MVP - 掘金</a></h3><h3 id="3-我对移动端架构的思考-掘金"><a href="#3-我对移动端架构的思考-掘金" class="headerlink" title="3. 我对移动端架构的思考 - 掘金"></a>3. <a href="https://juejin.im/post/5b44d50de51d451925627900" target="_blank" rel="noopener">我对移动端架构的思考 - 掘金</a></h3><h2 id="第十九关：组件化-建议学习时间：7天"><a href="#第十九关：组件化-建议学习时间：7天" class="headerlink" title="第十九关：组件化 (建议学习时间：7天)"></a>第十九关：组件化 (建议学习时间：7天)</h2><h3 id="1-Android-组件化最佳实践-掘金"><a href="#1-Android-组件化最佳实践-掘金" class="headerlink" title="1. Android 组件化最佳实践 - 掘金"></a>1. <a href="https://juejin.im/post/5b5f17976fb9a04fa775658d" target="_blank" rel="noopener">Android 组件化最佳实践 - 掘金</a></h3><h2 id="第二十关：jni和ndk基础-建议学习时间：30-60天"><a href="#第二十关：jni和ndk基础-建议学习时间：30-60天" class="headerlink" title="第二十关：jni和ndk基础 (建议学习时间：30-60天)"></a>第二十关：jni和ndk基础 (建议学习时间：30-60天)</h2><h2 id="要求：熟悉jni和ndk语法，能进行简单的开发"><a href="#要求：熟悉jni和ndk语法，能进行简单的开发" class="headerlink" title="要求：熟悉jni和ndk语法，能进行简单的开发"></a>要求：熟悉jni和ndk语法，能进行简单的开发</h2><h3 id="1-Android开发艺术探索》第14章"><a href="#1-Android开发艺术探索》第14章" class="headerlink" title="1. Android开发艺术探索》第14章"></a>1. Android开发艺术探索》第14章</h3><h3 id="2-JNI-NDK开发指南-技术改变生活（为理想而奋斗，为目标而努力！）-xyang0917-…"><a href="#2-JNI-NDK开发指南-技术改变生活（为理想而奋斗，为目标而努力！）-xyang0917-…" class="headerlink" title="2. JNI/NDK开发指南 - 技术改变生活（为理想而奋斗，为目标而努力！） - xyang0917 -…"></a>2. <a href="https://blog.csdn.net/xyang81/column/info/blogjnindk" target="_blank" rel="noopener">JNI/NDK开发指南 - 技术改变生活（为理想而奋斗，为目标而努力！） - xyang0917 -…</a></h3><h3 id="3-官方的ndk入门指南"><a href="#3-官方的ndk入门指南" class="headerlink" title="3. 官方的ndk入门指南"></a>3. <a href="https://developer.android.com/ndk/guides/" target="_blank" rel="noopener">官方的ndk入门指南</a></h3><h3 id="4-Android-JNI-编程实践-简书"><a href="#4-Android-JNI-编程实践-简书" class="headerlink" title="4. Android JNI 编程实践 - 简书"></a>4. <a href="https://www.jianshu.com/p/9b83cc5a5ba8" target="_blank" rel="noopener">Android JNI 编程实践 - 简书</a></h3><h3 id="5-书籍《Android-C-高级编程-使用NDK》"><a href="#5-书籍《Android-C-高级编程-使用NDK》" class="headerlink" title="5. 书籍《Android C++高级编程 使用NDK》"></a>5. 书籍《Android C++高级编程 使用NDK》</h3><h2 id="第二十一关：安全-建议学习时间：14天"><a href="#第二十一关：安全-建议学习时间：14天" class="headerlink" title="第二十一关：安全 (建议学习时间：14天)"></a>第二十一关：安全 (建议学习时间：14天)</h2><h2 id="要求：熟悉各种发编译-二次打包工具，了解smali"><a href="#要求：熟悉各种发编译-二次打包工具，了解smali" class="headerlink" title="要求：熟悉各种发编译+二次打包工具，了解smali"></a>要求：熟悉各种发编译+二次打包工具，了解smali</h2><h3 id="1-浅析Android沙箱模型-ljheee的博客-CSDN博客"><a href="#1-浅析Android沙箱模型-ljheee的博客-CSDN博客" class="headerlink" title="1. 浅析Android沙箱模型 - ljheee的博客 - CSDN博客"></a>1. <a href="https://blog.csdn.net/ljheee/article/details/53191397" target="_blank" rel="noopener">浅析Android沙箱模型 - ljheee的博客 - CSDN博客</a></h3><h3 id="2-Smali语法介绍-任玉刚-CSDN博客"><a href="#2-Smali语法介绍-任玉刚-CSDN博客" class="headerlink" title="2. Smali语法介绍 - 任玉刚 - CSDN博客"></a>2. <a href="https://blog.csdn.net/ljheee/article/details/53191397" target="_blank" rel="noopener">Smali语法介绍 - 任玉刚 - CSDN博客</a></h3><h3 id="3-Smali-介绍-CTF-Wiki"><a href="#3-Smali-介绍-CTF-Wiki" class="headerlink" title="3. Smali 介绍 - CTF Wiki"></a>3. <a href="https://ctf-wiki.github.io/ctf-wiki/android/basic_operating_mechanism/java_layer/smali/smali/" target="_blank" rel="noopener">Smali 介绍 - CTF Wiki</a></h3><h3 id="4-android逆向分析之smali语法-L25000的专栏-CSDN博客"><a href="#4-android逆向分析之smali语法-L25000的专栏-CSDN博客" class="headerlink" title="4. android逆向分析之smali语法 - L25000的专栏 - CSDN博客"></a>4. <a href="https://ctf-wiki.github.io/ctf-wiki/android/basic_operating_mechanism/java_layer/smali/smali/" target="_blank" rel="noopener">android逆向分析之smali语法 - L25000的专栏 - CSDN博客</a></h3><h4 id="备注：各种工具软件大家网上自己找，反编译的话推荐jadx，比dex2jar-jd-gui更方便，smali有点复杂，如果不是特别需要，不建议深入学习，事实上，很多人私下研究安全其实就是为了破解。"><a href="#备注：各种工具软件大家网上自己找，反编译的话推荐jadx，比dex2jar-jd-gui更方便，smali有点复杂，如果不是特别需要，不建议深入学习，事实上，很多人私下研究安全其实就是为了破解。" class="headerlink" title="备注：各种工具软件大家网上自己找，反编译的话推荐jadx，比dex2jar+jd-gui更方便，smali有点复杂，如果不是特别需要，不建议深入学习，事实上，很多人私下研究安全其实就是为了破解。"></a>备注：各种工具软件大家网上自己找，反编译的话推荐jadx，比dex2jar+jd-gui更方便，smali有点复杂，如果不是特别需要，不建议深入学习，事实上，很多人私下研究安全其实就是为了破解。</h4><h2 id="第二十二关：动态化-建议学习时间：30-60天"><a href="#第二十二关：动态化-建议学习时间：30-60天" class="headerlink" title="第二十二关：动态化 (建议学习时间：30-60天)"></a>第二十二关：动态化 (建议学习时间：30-60天)</h2><h2 id="要求：阅读VirtualAPK的源码，熟悉常见的热修复和插件化原理"><a href="#要求：阅读VirtualAPK的源码，熟悉常见的热修复和插件化原理" class="headerlink" title="要求：阅读VirtualAPK的源码，熟悉常见的热修复和插件化原理"></a>要求：阅读VirtualAPK的源码，熟悉常见的热修复和插件化原理</h2><h3 id="1-Android-热修复Nuwa的原理及Gradle插件源码解析-区长的专栏-CSDN博客"><a href="#1-Android-热修复Nuwa的原理及Gradle插件源码解析-区长的专栏-CSDN博客" class="headerlink" title="1. Android 热修复Nuwa的原理及Gradle插件源码解析 - 区长的专栏 - CSDN博客"></a>1. <a href="https://blog.csdn.net/sbsujjbcy/article/details/50812674" target="_blank" rel="noopener">Android 热修复Nuwa的原理及Gradle插件源码解析 - 区长的专栏 - CSDN博客</a></h3><h3 id="2-Android-热修复-Tinker接入及源码浅析-Hongyang-CSDN博客"><a href="#2-Android-热修复-Tinker接入及源码浅析-Hongyang-CSDN博客" class="headerlink" title="2. Android 热修复 Tinker接入及源码浅析 - Hongyang - CSDN博客"></a>2. <a href="https://blog.csdn.net/lmj623565791/article/details/54882693" target="_blank" rel="noopener">Android 热修复 Tinker接入及源码浅析 - Hongyang - CSDN博客</a></h3><h3 id="3-滴滴插件化方案-VirtualApk-源码解析-Hongyang-CSDN博客"><a href="#3-滴滴插件化方案-VirtualApk-源码解析-Hongyang-CSDN博客" class="headerlink" title="3. 滴滴插件化方案 VirtualApk 源码解析 - Hongyang - CSDN博客"></a>3. <a href="https://blog.csdn.net/lmj623565791/article/details/75000580" target="_blank" rel="noopener">滴滴插件化方案 VirtualApk 源码解析 - Hongyang - CSDN博客</a></h3><h3 id="4-VirtualAPK资源加载机制"><a href="#4-VirtualAPK资源加载机制" class="headerlink" title="4. VirtualAPK资源加载机制"></a>4. <a href="https://www.notion.so/VirtualAPK-1fce1a910c424937acde9528d2acd537" target="_blank" rel="noopener">VirtualAPK资源加载机制</a></h3><h3 id="5-插件化技术的方方面面"><a href="#5-插件化技术的方方面面" class="headerlink" title="5. 插件化技术的方方面面"></a>5. <a href="https://github.com/tiann/understand-plugin-framework" target="_blank" rel="noopener">插件化技术的方方面面</a></h3><h3 id="6-VirtualAPK引擎和构建部分"><a href="#6-VirtualAPK引擎和构建部分" class="headerlink" title="6. VirtualAPK引擎和构建部分"></a>6. <a href="https://github.com/didi/VirtualAPK" target="_blank" rel="noopener">VirtualAPK引擎和构建部分</a></h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/05/07/androidSenior/" data-id="ck9wxylny0003e7opfcxe17w9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/05/07/androidPrimary/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Android初级学习路线
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/05/07/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/08/markdownDemo/">markdownDemo</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/07/androidPrimary/">Android初级学习路线</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/07/androidSenior/">Android高级学习路线</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/07/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Joey<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
